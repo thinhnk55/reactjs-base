@@ -1,10 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
+import "./services/i18n/index.ts";
+import I18nDemo from "./samples/I18nDemo.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <I18nDemo />
   </StrictMode>
 );
