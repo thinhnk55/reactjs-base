@@ -3,5 +3,19 @@
   "recoil": {
     "label_1": "Text: ",
     "label_2": "Number Of Characters: "
+  },
+  "toastify": {
+    "button": {
+      "info": "Show Info Toast",
+      "success": "Show Success Toast",
+      "error": "Show Error Toast",
+      "warning": "Show Warning Toast"
+    },
+    "messages": {
+      "info": "This is an info message.",
+      "success": "This is an success message.",
+      "error": "This is an error message.",
+      "warning": "This is a warning message."
+    }
   }
 }
