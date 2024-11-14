@@ -17,5 +17,12 @@
       "error": "Đây là nội dung thông báo lỗi",
       "warning": "Đây là nội dung thông báo cảnh báo"
     }
+  },
+  "axios": {
+    "demo": {
+      "loading": "Đang tải",
+      "previous": "Trước",
+      "next": "Sau"
+    }
   }
 }

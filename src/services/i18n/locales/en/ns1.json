@@ -17,5 +17,12 @@
       "error": "This is an error message.",
       "warning": "This is a warning message."
     }
+  },
+  "axios": {
+    "demo": {
+      "loading": "Loading",
+      "previous": "Previous",
+      "next": "Next"
+    }
   }
 }
