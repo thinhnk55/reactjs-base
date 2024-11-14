@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // Custom Toast Component to force re-render on language change
@@ -58,9 +58,6 @@ export default function I18nDemo() {
       >
         {t("toastify.button.warning")}
       </button>
-
-      {/* Toast container */}
-      <ToastContainer />
     </div>
   );
 }

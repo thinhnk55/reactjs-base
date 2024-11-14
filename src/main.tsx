@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")!).render(
       <I18nDemo />
       <RecoilDemo />
       <ToastifyDemo />
-      <ToastContainer containerId={"main_toastify"} />
     </RecoilRoot>
+    <ToastContainer />
   </StrictMode>
 );
