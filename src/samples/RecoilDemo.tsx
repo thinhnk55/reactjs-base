@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { atom, selector, useRecoilState, useRecoilValue } from "recoil";
 
 function RecoilDemo() {
@@ -25,7 +26,7 @@ const demoSelector = selector({
 
 function TextInput() {
   const [text, setText] = useRecoilState(demoAtom);
-
+  const { t } = useTranslation();
   const onChange = (event: {
     target: { value: string | ((currVal: string) => string) };
   }) => {
@@ -41,12 +42,13 @@ function TextInput() {
         onChange={onChange}
       />
       <br />
-      Echo: {text}
+      {t("recoil.label_1") + text}
     </div>
   );
 }
 
 function CharacterCount() {
+  const { t } = useTranslation();
   const count = useRecoilValue(demoSelector);
-  return <>Character Count: {count}</>;
+  return <>{t("recoil.label_2") + count}</>;
 }

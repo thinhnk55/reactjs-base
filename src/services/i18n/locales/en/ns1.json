@@ -1,3 +1,7 @@
 {
-  "demo": "This is demo for i18next"
+  "demo": "This is demo for i18next",
+  "recoil": {
+    "label_1": "Text: ",
+    "label_2": "Number Of Characters: "
+  }
 }
