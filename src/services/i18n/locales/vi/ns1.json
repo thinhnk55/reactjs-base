@@ -1,3 +1,7 @@
 {
-  "demo": "Đây là minh họa i18next"
+  "demo": "Đây là minh họa i18next",
+  "recoil": {
+    "label_1": "Nội dung: ",
+    "label_2": "Số kí tự: "
+  }
 }
