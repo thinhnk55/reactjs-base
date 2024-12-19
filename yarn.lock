@@ -1787,6 +1787,11 @@ react-i18next@^15.1.1:
     "@babel/runtime" "^7.25.0"
     html-parse-stringify "^3.0.1"
 
+react-json-view-lite@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-json-view-lite/-/react-json-view-lite-2.0.1.tgz#aa4473103301cb6dc49c1f5d9e29684be460b838"
+  integrity sha512-yElNMSzL7UJ9rMDQIbTiBemXbvfAoqpxM/0IQd3nr52CLLBC0HxOSKcta/bayct2QCq7ZVzLzI8CGfuf387hHw==
+
 react-refresh@^0.14.2:
   version "0.14.2"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.2.tgz#3833da01ce32da470f1f936b9d477da5c7028bf9"
