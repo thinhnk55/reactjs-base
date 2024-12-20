@@ -5,10 +5,15 @@ import {
   defaultStyles,
 } from "react-json-view-lite";
 import "react-json-view-lite/dist/index.css";
-import formatHighlight from "json-format-highlight";
+import JsonHighlighter from "./JsonHightlight";
+
+interface IPA {
+  word: string;
+  ipa: string;
+}
 
 interface Translation {
-  origin: string;
+  origin: IPA;
   translated: string;
 }
 
@@ -28,7 +33,10 @@ const json: TermsData = {
       explanation:
         "The term 'devastating' refers to something that causes severe and overwhelming destruction or damage. In this context, it describes the significant harm and impact of the war in Ukraine.",
       translation: {
-        origin: "devastating",
+        origin: {
+          word: "devastating",
+          ipa: "devastating",
+        },
         translated: "tàn phá",
       },
       example:
@@ -39,14 +47,20 @@ const json: TermsData = {
 
 export const JsonViewDemo: React.FC = () => {
   return (
-    <div className="bg-amber-100 w-96 rounded-sm shadow-sm p-4 flex flex-col items-center">
-      <div>{formatHighlight(json, colorOptions)}</div>
-      <JsonView
-        data={json}
-        shouldExpandNode={allExpanded}
-        style={defaultStyles}
-      />
-      <JsonView data={json} shouldExpandNode={allExpanded} style={darkStyles} />
+    <div className="bg-background-200 flex justify-center">
+      <div className="bg-slate-100 flex flex-col gap-1 w-screen max-w-[600px] min-w-[375px] min-h-screen shadow-lg">
+        <JsonHighlighter data={json} indent={2} />
+        <JsonView
+          data={json}
+          shouldExpandNode={allExpanded}
+          style={defaultStyles}
+        />
+        <JsonView
+          data={json}
+          shouldExpandNode={allExpanded}
+          style={darkStyles}
+        />
+      </div>
     </div>
   );
 };

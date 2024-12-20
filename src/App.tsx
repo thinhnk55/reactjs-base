@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
+import { JsonViewDemo } from "./samples/JsonViewDemo";
 
 const About = lazy(() => import("./pages/About"));
 const Project = lazy(() => import("./pages/Project"));
@@ -15,6 +16,7 @@ const App = () => (
           <Route path="project" element={<Project />} />
           <Route path="education" element={<Education />} />
         </Route>
+        <Route path="/jsonview" element={<JsonViewDemo />} />
       </Routes>
     </Suspense>
   </BrowserRouter>
