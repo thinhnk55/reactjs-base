@@ -8,10 +8,12 @@ import I18nDemo from "./samples/I18nDemo.tsx";
 import { ToastContainer } from "react-toastify";
 import ToastifyDemo from "./samples/ToastifyDemo.tsx";
 import AxiosDemo from "./samples/AxiosDemo.tsx";
+import SpeechToText from "./samples/SpeechToText.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RecoilRoot>
+      <SpeechToText />
       <I18nDemo />
       <RecoilDemo />
       <ToastifyDemo />
